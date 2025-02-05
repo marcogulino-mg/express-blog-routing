@@ -1,11 +1,14 @@
 //Express IMPORT
 const express = require("express");
 const router = express.Router();
+//posts.js Array of OBJECT IMPORT
+const postsList = require("../data/posts");
 
 //CRUD Routes of posts
 //INDEX
 router.get("/", (req, res) => {
   res.send("Lista dei post");
+  
 });
 
 //SHOW
