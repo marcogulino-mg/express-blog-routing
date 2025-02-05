@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
 
 //SHOW
 router.get("/:id", (req, res) => {
-  res.send("Richiesto il post con ID: " + req.params.id);
+  res.json(postsList[req.params.id]);
 });
 
 //STORE
