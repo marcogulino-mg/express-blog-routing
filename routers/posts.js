@@ -7,8 +7,7 @@ const postsList = require("../data/posts");
 //CRUD Routes of posts
 //INDEX
 router.get("/", (req, res) => {
-  res.send("Lista dei post");
-  
+  res.json(postsList);
 });
 
 //SHOW
